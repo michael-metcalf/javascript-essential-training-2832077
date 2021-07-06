@@ -20,3 +20,9 @@ const backpack = {
     this.strapLength.right = lengthRight;
   },
 };
+
+// console logging an object using template literals (use JSON.stringify)
+console.log(`This is our 'backpack' object: ${JSON.stringify(backpack)}`);
+
+// console logging an object without using a template literal
+console.log("This is our 'backpack' object: ", backpack );

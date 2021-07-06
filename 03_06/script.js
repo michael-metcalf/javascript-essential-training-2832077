@@ -21,4 +21,12 @@ const backpack = {
   },
 };
 
+// accessing object properties with dot notation
 console.log("The backpack object:", backpack);
+console.log("The pocketNum value: ", backpack.pocketNum);
+console.log("The length of the left strap: ", backpack.strapLength.left);
+
+// accessing object properties with bracket notation
+var query = "pocketNum";
+
+console.log("The pocketNum value: ", backpack[query]);
