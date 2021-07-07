@@ -54,9 +54,65 @@ const content = `
 
 const main = document.querySelector(".maincontent");
 
-const newArticle = document.createElement("article");
-newArticle.classList.add("backpack");
-newArticle.setAttribute("id", "everyday");
-newArticle.innerHTML = content;
+const navContent = `
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+      <li><a href="#">FAQ</a></li>
+      <li><a href="#">Sign Out</a></li>
+`;
 
-main.append(newArticle);
+const mainNav = document.createElement("nav");
+mainNav.classList.add("main-navigation");
+const navList = document.createElement("ul");
+navList.innerHTML = navContent;
+mainNav.append(navList);
+
+document.querySelector(".siteheader").append(mainNav);
+
+// Do CSS in a style tag in the html file, not like this...
+// document.querySelector(".main-navigation").style.display = "flex";
+// document.querySelector(".main-navigation").style.flexDirection = "column";
+// document.querySelector(".main-navigation").style.backgroundColor = "rebeccapurple";
+
+// WTH were you thinking?...
+// const header = document.querySelector("header");
+
+// const newArticle = document.createElement("article");
+// newArticle.classList.add("backpack");
+// newArticle.setAttribute("id", "everyday");
+// newArticle.innerHTML = content;
+
+// const navbar = document.createElement("nav");
+// const ul = document.createElement("ul");
+// const li1 = document.createElement("li");
+// const li2 = document.createElement("li");
+// const li3 = document.createElement("li");
+// const li4 = document.createElement("li");
+// const li5 = document.createElement("li");
+
+
+// navbar.classList.add("navbar");
+// li1.classList.add("home");
+// document.querySelector(".home").setAttribute("content", "Home");
+// li2.classList.add("about");
+// document.querySelector(".home").innerHTML("About");
+// li3.classList.add("contact");
+// document.querySelector(".home").innerHTML("Contact");
+// li4.classList.add("faq");
+// document.querySelector(".home").innerHTML("FAQ");
+// li5.classList.add("signout");
+// document.querySelector(".home").innerHTML("Sign Out");
+
+// navbar.style.display = "flex";
+// navbar.style.flexDirection = "horizontal";
+// navbar.style.backgroundColor = "rebeccapurple";
+
+// main.append(newArticle);
+// header.append(navbar);
+// navbar.append(ul);
+// ul.append(li1);
+// ul.append(li2);
+// ul.append(li3);
+// ul.append(li4);
+// ul.append(li5);
