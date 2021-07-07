@@ -8,4 +8,22 @@
  * - Remove the item you found using the find method from the array.
  */
 
+const arr = ["cat", "thermos", true, 88, "keyboard"];
+
+let lastItem = arr.pop();
+console.log(arr);
+
+arr.unshift(lastItem);
+console.log(arr);
+
+console.log(arr.sort());
+
+let foundItem = arr.find(item => item === "keyboard");
+console.log(foundItem);
+
+console.log(
+  arr.splice(arr.findIndex(item => item == foundItem), 1));
+
+console.log(arr);
+
 

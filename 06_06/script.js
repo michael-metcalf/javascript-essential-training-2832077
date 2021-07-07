@@ -7,7 +7,7 @@
 let stringDemo = "A string of text.";
 console.log("String:", stringDemo);
 
-// Numbes:
+// Numbers:
 let integerDemo = 4;
 console.log("Integer:", integerDemo);
 
