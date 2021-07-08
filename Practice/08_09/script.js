@@ -57,3 +57,22 @@ const content = `
       }</span></li>
     </ul>  
 `;
+
+const articleFunc = (articleContent) => {
+  const article = document.createElement("article");
+  article.innerHTML = articleContent;
+  article.append(helperImage(frogpack))
+  return article; 
+};
+
+const helperImage = (object) => {
+  const figure = document.createElement("figure");
+  figure.innerHTML = `
+    <img src="${object.image}">
+    <figcaption>An image of ${object.name}.</figcaption>
+  `;
+  return figure;
+}
+
+const main = document.querySelector("main");
+main.append(articleFunc(content));

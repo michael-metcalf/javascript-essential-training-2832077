@@ -7,7 +7,7 @@
  */
 import backpackObjectArray from "./components/data.js";
 
-// Map throught the array and make a new array
+// Map through the array and make a new array
 const content = backpackObjectArray.map((backpack) => {
   // "backpack" now holds a single backpack object
 
